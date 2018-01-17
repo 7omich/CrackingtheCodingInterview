@@ -1,3 +1,4 @@
+# Time complexity: O(n^2)
 # Input format is as follows:
 # 6
 # 5 2 4 6 1 3
