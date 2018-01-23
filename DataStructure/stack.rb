@@ -51,4 +51,4 @@ arr.each do |obj|
   end
 end
 
-p s.stack[s.top]
+print "#{s.stack[s.top]}\n"
