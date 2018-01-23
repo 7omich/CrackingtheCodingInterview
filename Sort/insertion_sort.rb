@@ -19,4 +19,5 @@ def insertion_sort(arr, n)
   end
 end
 
+print "#{arr.join(' ')}\n"
 insertion_sort(arr, n)

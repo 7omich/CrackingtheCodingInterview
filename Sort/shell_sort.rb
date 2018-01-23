@@ -1,10 +1,17 @@
 # Time complexity: O(n^1.25)
 # Input format is as follows:
 # 5
-# 5 1 4 3 2
+# 5
+# 1
+# 4
+# 3
+# 2
 
 n = gets.chomp.to_i
-arr = gets.chomp.split(' ').map(&:to_i)
+arr = []
+(0...n).each do |i|
+  arr[i] = gets.chomp.to_i
+end
 
 @count = 0
 @g_arr = []
@@ -35,4 +42,7 @@ def shell_sort(arr, n)
 end
 
 shell_sort(arr, n)
-print "#{@g_arr.join(' ')}\n#{@count}\n#{arr.join(' ')}\n"
+print "#{@g_arr.count}\n#{@g_arr.join(' ')}\n#{@count}\n"
+arr.each do |obj|
+  print "#{obj}\n"
+end
